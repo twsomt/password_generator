@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about me</title>
+</head>
+<body>
+    <h1>About me</h1>
+    <p>The project is made as an example of django's work. 
+        As part of the task, you need to add the about page 
+        to the project, and this is it.</p>
+
+    <p>So far, about works through the generator template, 
+        but it should work through the dedicated about template. 
+        However, so far I have not been able to do this, since 
+        after initialization in urls.py about template and about 
+        function inside views.py for some reason, the framework 
+        turns to the about template in an attempt to find the 
+        home and password functions that are defined in the 
+        generator template.</p>
+
+    <p>Now you know a little more about me. If I manage to 
+        implement my plan, I will delete the previous paragraph 
+        or supplement it.</p>
+        
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>
